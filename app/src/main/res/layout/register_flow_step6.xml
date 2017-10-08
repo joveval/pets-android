@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#3c4d83">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Datos Mascota\nEspecie"
+            android:textSize="8pt" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/imagen_mascota_especia_04" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONTINUAR"
+            android:theme="@style/DarkButton"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:theme="@style/AppLightTheme">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="#FFF"
+            >
+
+            <RadioButton
+                android:id="@+id/input_especie_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Canino"
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:id="@+id/input_especie_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Felino" />
+            <RadioButton
+                android:id="@+id/input_especie_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Ave" />
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+</LinearLayout>

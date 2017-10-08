@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hound.com.houndapp.activity.RegisterFlowActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/base_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <include
+                android:id="@+id/include"
+                layout="@layout/register_flow_step4"
+                android:visibility="gone"></include>
+
+            <include
+                layout="@layout/register_flow_step3"
+                android:visibility="gone"></include>
+
+            <include layout="@layout/register_flow_step5"
+                    android:visibility="gone">
+
+            </include>
+            <include layout="@layout/register_flow_step6"
+                android:visibility="gone">
+
+            </include>
+            <include layout="@layout/register_flow_step7"
+                android:visibility="gone">
+
+            </include>
+
+            <include layout="@layout/register_flow_step8"
+                android:visibility="gone">
+
+            </include>
+            <include layout="@layout/register_flow_step9"
+                android:visibility="gone">
+            </include>
+            <include layout="@layout/register_flow_step10"
+                android:visibility="gone">
+            </include>
+            <include layout="@layout/register_flow_closing"
+                android:visibility="visible">
+            </include>
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/prevActionBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:clickable="true"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/btn_prev"
+                android:layout_below="@+id/include"
+                android:layout_toRightOf="@+id/include"
+                android:layout_toEndOf="@+id/include"
+                android:backgroundTint="@color/colorPrimary"/>
+        </RelativeLayout>
+
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
