@@ -5,12 +5,18 @@ import android.database.Cursor;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.provider.MediaStore;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.Button;
 import android.widget.ImageView;
+
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -27,6 +33,32 @@ public class RegisterFlowActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_flow);
         ButterKnife.bind(this);
+        getSupportActionBar().setTitle("Registro");
+    }
+
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.register_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_cancel_register:
+                // User chose the "Settings" item, show the app settings UI...
+                Intent intent = new Intent(RegisterFlowActivity.this,LoginActivity.class);
+                startActivity(intent);
+                return true;
+            default:
+                // If we got here, the user's action was not recognized.
+                // Invoke the superclass to handle it.
+                return super.onOptionsItemSelected(item);
+
+        }
     }
 
     @OnClick({R.id.link_step2,R.id.link_step3,R.id.link_step4,R.id.link_step5,R.id.link_step6,R.id.link_step7,R.id.link_step8,R.id.link_step9})
@@ -35,6 +67,10 @@ public class RegisterFlowActivity extends AppCompatActivity {
         View newView = getViewByPosition(currentPos);
         oldView.setVisibility(View.GONE);
         newView.setVisibility(View.VISIBLE);
+        if(currentPos==9){
+            View view = findViewById(R.id.prevActionBtn);
+            view.setVisibility(View.GONE);
+        }
     }
     @OnClick(R.id.prevActionBtn)
     public void goBackStep(){
@@ -42,6 +78,7 @@ public class RegisterFlowActivity extends AppCompatActivity {
         View newView = getViewByPosition(currentPos);
         oldView.setVisibility(View.GONE);
         newView.setVisibility(View.VISIBLE);
+
     }
 
     @OnClick(R.id.img_mascota)

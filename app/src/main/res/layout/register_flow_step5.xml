@@ -51,6 +51,8 @@
                 android:layout_weight="1"
                 android:text="Macho"
                 android:gravity="center"
+                android:textSize="@dimen/min_size"
+                android:textColor="@color/colorPrimary"
                 android:button="@android:color/transparent"
                 android:background="@drawable/rb_primary"
                 android:checked="true"
@@ -62,6 +64,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/min_size"
                 android:button="@android:color/transparent"
                 android:background="@drawable/rb_primary"
                 android:text="Hembra" />

@@ -9,6 +9,7 @@ import android.widget.TextView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import hound.com.houndapp.R;
+import hound.com.houndapp.model.TypeFaceUtil;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -18,12 +19,15 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        TypeFaceUtil.overrideFont(getApplicationContext(), "SERIF", "fonts/AvertaDemo_Regular.otf");
+
         setContentView(R.layout.activity_login);
-
         ButterKnife.bind(this);
-
         TextView tRegister = (TextView) findViewById(R.id.link_forgot_pass);
         tRegister.setMovementMethod(LinkMovementMethod.getInstance());
+
+
 
 
 

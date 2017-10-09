@@ -61,7 +61,7 @@
                         android:layout_gravity="center_vertical"
                         android:hint="beingolea.a@gmail.com"
                         android:inputType="textPersonName"
-                        android:textSize="4pt" />
+                        android:textSize="@dimen/min_size" />
 
                 </LinearLayout>
 
@@ -83,7 +83,7 @@
                         android:layout_gravity="center_vertical"
                         android:hint="password"
                         android:inputType="textPassword"
-                        android:textSize="4pt" />
+                        android:textSize="@dimen/min_size" />
 
 
                 </LinearLayout>
@@ -102,7 +102,7 @@
                     android:layout_weight="0.03"
                     android:text="Ingresar"
                     android:textColor="@color/colorAccent"
-                    android:textSize="4pt"
+                    android:textSize="@dimen/min_size"
                     android:theme="@style/DarkButton" />
 
                 <Button
@@ -115,7 +115,7 @@
                     android:layout_marginTop="2dp"
                     android:text="Seguir con Facebook"
                     android:textColor="#E45157"
-                    android:textSize="4pt"
+                    android:textSize="@dimen/min_size"
                     android:theme="@style/LightButton" />
 
                 <LinearLayout
@@ -143,7 +143,7 @@
                         android:layout_marginBottom="1dp"
                         android:text="REGISTRO"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="4pt"
+                        android:textSize="@dimen/min_size"
                         android:theme="@style/LightButton" />
                 </LinearLayout>
 

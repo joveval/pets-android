@@ -45,6 +45,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Escribe el nombre de la raza"/>
+            android:hint="Escribe el nombre de la raza"
+            android:textSize="@dimen/min_size"
+            android:textColor="@color/colorPrimary"/>
     </LinearLayout>
 </LinearLayout>

@@ -47,7 +47,9 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="number"
-            android:hint="Tamaño"/>
+            android:hint="Tamaño"
+            android:textSize="@dimen/min_size"
+            android:textColor="@color/colorPrimary"/>
     </LinearLayout>
 
 

@@ -52,13 +52,12 @@
                 android:padding="12dp"
                 android:text="Añadir otra mascota"
                 android:textColor="@color/colorAccent"
-                android:textSize="5pt" />
+                android:textSize="@dimen/min_size" />
 
             <Button
                 android:id="@+id/btn_register_fb"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
                 android:layout_marginLeft="0dp"
                 android:layout_marginRight="0dp"
                 android:layout_marginTop="2dp"
@@ -66,7 +65,7 @@
                 android:padding="12dp"
                 android:text="Iniciar Hound"
                 android:textColor="@color/colorPrimary"
-                android:textSize="5pt" />
+                android:textSize="@dimen/min_size" />
 
         </LinearLayout>
     </RelativeLayout>
