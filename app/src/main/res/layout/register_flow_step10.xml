@@ -25,121 +25,183 @@
             android:layout_marginBottom="30dp"
             android:text="Elige por menos una"
             android:textSize="6pt" />
-
-
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
             android:columnCount="2"
-            android:theme="@style/AppLightTheme"
-            android:rowCount="5">
-            <Button
-                android:layout_width="wrap_content"
+            android:rowCount="5"
+            android:theme="@style/AppLightTheme">
+
+            <CheckBox
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_column="0"
                 android:layout_row="0"
+                android:background="@drawable/cb_primary"
+                android:paddingLeft="0dp"
+                android:theme="@style/LightCheckBox"
                 android:text="Amigable"
-                android:theme="@style/LightButton"
+                android:gravity="center"
+                android:button="@android:color/transparent"
                 android:textColor="@color/colorPrimary"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:textSize="8dp"/>
-            <Button
-                android:layout_width="wrap_content"
+                android:textSize="8dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <CheckBox
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_column="0"
                 android:layout_row="1"
                 android:text="Agresivo"
-                android:theme="@style/LightButton"
+                android:background="@drawable/cb_primary"
                 android:textColor="@color/colorPrimary"
-                android:gravity="center_horizontal|center_vertical"
-                android:textSize="8dp"/>
-            <Button
-                android:layout_width="wrap_content"
+                android:textSize="8dp"
+                android:gravity="center"
+                android:button="@android:color/transparent"
+                android:theme="@style/LightButton"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <CheckBox
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_column="0"
                 android:layout_row="2"
                 android:text="Dócil"
-                android:textSize="8dp"
-                android:theme="@style/LightButton"
                 android:textColor="@color/colorPrimary"
-                android:layout_gravity="center_horizontal|center_vertical"/>
-            <Button
-                android:layout_width="wrap_content"
+                android:background="@drawable/cb_primary"
+                android:textSize="8dp"
+                android:gravity="center"
+                android:button="@android:color/transparent"
+                android:theme="@style/LightButton"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <CheckBox
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_column="0"
                 android:layout_row="3"
                 android:text="Extrovertido"
-                android:textSize="8dp"
-                android:theme="@style/LightButton"
+                android:background="@drawable/cb_primary"
                 android:textColor="@color/colorPrimary"
-                android:layout_gravity="center_horizontal|center_vertical"/>
-            <Button
-                android:layout_width="wrap_content"
+                android:textSize="8dp"
+                android:gravity="center"
+                android:button="@android:color/transparent"
+                android:theme="@style/LightButton"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <CheckBox
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_column="0"
                 android:layout_row="4"
                 android:text="Callado"
-                android:textSize="8dp"
-                android:theme="@style/LightButton"
+                android:background="@drawable/cb_primary"
                 android:textColor="@color/colorPrimary"
-                android:layout_gravity="center_horizontal|center_vertical"/>
-            <Button
-                android:layout_width="wrap_content"
+                android:textSize="8dp"
+                android:gravity="center"
+                android:button="@android:color/transparent"
+                android:theme="@style/LightButton"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <CheckBox
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
+                android:layout_gravity="end"
                 android:layout_row="0"
                 android:text="Ágil"
-                android:textSize="8dp"
-                android:theme="@style/LightButton"
+                android:background="@drawable/cb_primary"
                 android:textColor="@color/colorPrimary"
-                android:layout_gravity="center_horizontal|center_vertical"/>
-            <Button
-                android:layout_width="wrap_content"
+                android:textSize="8dp"
+                android:gravity="center"
+                android:button="@android:color/transparent"
+                android:theme="@style/LightButton"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <CheckBox
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
+                android:layout_gravity="end"
                 android:layout_row="1"
                 android:text="Obstinado"
-                android:textSize="8dp"
-                android:theme="@style/LightButton"
                 android:textColor="@color/colorPrimary"
-                android:layout_gravity="center_horizontal|center_vertical"/>
-            <Button
-                android:layout_width="wrap_content"
+                android:textSize="8dp"
+                android:gravity="center"
+                android:button="@android:color/transparent"
+                android:background="@drawable/cb_primary"
+                android:theme="@style/LightButton"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <CheckBox
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
+                android:layout_gravity="end"
                 android:layout_row="2"
                 android:text="Juguetón"
-                android:textSize="8dp"
-                android:theme="@style/LightButton"
+                android:background="@drawable/cb_primary"
                 android:textColor="@color/colorPrimary"
-                android:layout_gravity="center_horizontal|center_vertical"/>
-            <Button
-                android:layout_width="wrap_content"
+                android:textSize="8dp"
+                android:gravity="center"
+                android:button="@android:color/transparent"
+                android:theme="@style/LightButton"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <CheckBox
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
+                android:layout_gravity="end"
                 android:layout_row="3"
+                android:background="@drawable/cb_primary"
                 android:text="Entrenable"
-                android:textSize="8dp"
-                android:theme="@style/LightButton"
                 android:textColor="@color/colorPrimary"
-                android:layout_gravity="center_horizontal|center_vertical"/>
-            <Button
-                android:layout_width="wrap_content"
+                android:textSize="8dp"
+                android:gravity="center"
+                android:button="@android:color/transparent"
+                android:theme="@style/LightButton"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <CheckBox
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
+                android:layout_gravity="end"
+                android:button="@android:color/transparent"
                 android:layout_row="4"
                 android:text="Obediente"
-                android:textSize="8dp"
-                android:theme="@style/LightButton"
+                android:background="@drawable/cb_primary"
                 android:textColor="@color/colorPrimary"
-                android:layout_gravity="center_horizontal|center_vertical"/>
+                android:textColorHighlight="@color/colorAccent"
+                android:textSize="8dp"
+                android:gravity="center"
+                android:theme="@style/LightButton"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
 
         </GridLayout>
 
+
+
+
         <Button
+            android:id="@+id/link_step9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CONTINUAR"
+            android:text="TERMINAR"
+            android:textColor="@color/colorAccent"
             android:theme="@style/DarkButton"/>
 
     </LinearLayout>

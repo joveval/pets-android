@@ -43,8 +43,6 @@
                     android:layout_height="50dp"
                     android:src="@drawable/mail_08" />
 
-
-
                 <EditText
                     android:id="@+id/input_email"
                     android:layout_width="match_parent"
@@ -53,6 +51,9 @@
                     android:inputType="textEmailAddress"
                     android:layout_gravity="center_vertical"
                     android:textSize="4pt" />
+
+
+
 
             </LinearLayout>
 
@@ -104,7 +105,7 @@
             <Button
                 android:id="@+id/btn_register"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:layout_marginBottom="2dp"
                 android:layout_marginLeft="0dp"
                 android:layout_marginRight="0dp"
@@ -113,12 +114,12 @@
                 android:padding="12dp"
                 android:text="Registrarse"
                 android:textColor="@color/colorAccent"
-                android:textSize="5pt" />
+                android:textSize="4pt" />
 
             <Button
                 android:id="@+id/btn_register_fb"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:layout_marginBottom="20dp"
                 android:layout_marginLeft="0dp"
                 android:layout_marginRight="0dp"
@@ -127,7 +128,7 @@
                 android:padding="12dp"
                 android:text="Seguir con Facebook"
                 android:textColor="@color/colorPrimary"
-                android:textSize="5pt" />
+                android:textSize="4pt" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -140,7 +141,7 @@
                     android:id="@+id/link_polytics"
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="0dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_gravity="center_vertical"
                     android:text="Al registrarme estoy de acuerdo con los términos del servicio y políticas de privacidad de Hound"
                     android:textSize="8dip" />
@@ -149,12 +150,12 @@
                     android:id="@+id/link_login"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="0dp"
+                    android:layout_marginBottom="1dp"
                     android:layout_gravity="bottom"
                     android:theme="@style/LightButton"
                     android:text="INGRESAR"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="12dip" />
+                    android:textSize="4pt" />
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>

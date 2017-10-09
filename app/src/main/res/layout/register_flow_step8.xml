@@ -23,9 +23,11 @@
             android:layout_height="200dp"
             android:src="@drawable/mascota_raza_06" />
         <Button
+            android:id="@+id/link_step7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="CONTINUAR"
+            android:textColor="@color/colorAccent"
             android:theme="@style/DarkButton"/>
 
     </LinearLayout>

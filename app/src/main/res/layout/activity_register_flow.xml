@@ -17,39 +17,54 @@
             android:layout_height="fill_parent">
 
             <include
-                android:id="@+id/include"
+                android:id="@+id/include1"
                 layout="@layout/register_flow_step4"
-                android:visibility="gone"></include>
+                android:visibility="visible"></include>
 
             <include
+                android:id="@+id/include2"
                 layout="@layout/register_flow_step3"
                 android:visibility="gone"></include>
 
-            <include layout="@layout/register_flow_step5"
-                    android:visibility="gone">
-
-            </include>
-            <include layout="@layout/register_flow_step6"
+            <include
+                android:id="@+id/include3"
+                layout="@layout/register_flow_step5"
                 android:visibility="gone">
 
             </include>
-            <include layout="@layout/register_flow_step7"
+            <include
+                android:id="@+id/include4"
+                layout="@layout/register_flow_step6"
+                android:visibility="gone">
+
+            </include>
+            <include
+                android:id="@+id/include5"
+                layout="@layout/register_flow_step7"
                 android:visibility="gone">
 
             </include>
 
-            <include layout="@layout/register_flow_step8"
+            <include
+                android:id="@+id/include6"
+                layout="@layout/register_flow_step8"
                 android:visibility="gone">
 
             </include>
-            <include layout="@layout/register_flow_step9"
+            <include
+                android:id="@+id/include7"
+                layout="@layout/register_flow_step9"
                 android:visibility="gone">
             </include>
-            <include layout="@layout/register_flow_step10"
+            <include
+                android:id="@+id/include8"
+                layout="@layout/register_flow_step10"
                 android:visibility="gone">
             </include>
-            <include layout="@layout/register_flow_closing"
-                android:visibility="visible">
+            <include
+                android:id="@+id/include9"
+                layout="@layout/register_flow_closing"
+                android:visibility="gone">
             </include>
             <android.support.design.widget.FloatingActionButton
                 android:id="@+id/prevActionBtn"
@@ -60,10 +75,9 @@
                 android:clickable="true"
                 app:fabSize="mini"
                 app:srcCompat="@drawable/btn_prev"
-                android:layout_below="@+id/include"
-                android:layout_toRightOf="@+id/include"
-                android:layout_toEndOf="@+id/include"
-                android:backgroundTint="@color/colorPrimary"/>
+                android:layout_below="@+id/include1"
+                android:layout_toRightOf="@+id/include1"
+                android:layout_toEndOf="@+id/include1"/>
         </RelativeLayout>
 
 

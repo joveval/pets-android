@@ -24,9 +24,11 @@
             android:layout_height="200dp"
             android:src="@drawable/mascota_sexo_03" />
         <Button
+            android:id="@+id/link_step4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="CONTINUAR"
+            android:textColor="@color/colorAccent"
             android:theme="@style/DarkButton"/>
 
     </LinearLayout>
@@ -40,17 +42,17 @@
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:background="#FFF"
-            >
+            android:orientation="horizontal">
 
             <RadioButton
                 android:id="@+id/input_mascota_sexo_m"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:buttonTint="@color/colorPrimary"
                 android:text="Macho"
+                android:gravity="center"
+                android:button="@android:color/transparent"
+                android:background="@drawable/rb_primary"
                 android:checked="true"
                 />
 
@@ -59,7 +61,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:buttonTint="@color/colorPrimary"
+                android:gravity="center"
+                android:button="@android:color/transparent"
+                android:background="@drawable/rb_primary"
                 android:text="Hembra" />
         </RadioGroup>
     </LinearLayout>

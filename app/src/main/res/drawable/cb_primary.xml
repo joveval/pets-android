@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- pressed -->
+    <item android:state_pressed="true"
+        android:drawable="@drawable/rb_primary_checked" /> <!-- focused -->
+    <item android:state_checked="true"
+          android:drawable="@drawable/rb_primary_checked"/> <!-- hovered -->
+    <item android:drawable="@drawable/rb_primary_not_checked" /> <!-- default -->
+
+</selector>

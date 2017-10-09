@@ -22,6 +22,9 @@
     <style name="LightButton">
         <item name="android:colorButtonNormal">@color/button_color_light</item>
     </style>
-
+    <style name="LightCheckBox">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/colorPrimaryDark</item>
+    </style>
 
 </resources>

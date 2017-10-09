@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@drawable/base_bg">
-    <RelativeLayout
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
@@ -27,11 +25,13 @@
             android:layout_marginTop="30dp"
             android:gravity="center"
             android:text="Datos Mascota"
+            android:clickable="true"
             android:textSize="8pt" />
 
         <ImageView
+            android:id="@+id/img_mascota"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="200dp"
             android:src="@drawable/boton_add_foto_02" />
 
 
@@ -43,10 +43,16 @@
             android:layout_height="wrap_content"
             android:hint="Nombre de mi mascota"
             android:layout_marginBottom="10dp"
-            android:inputType="textPassword"
+            android:inputType="textPersonName"
             android:textSize="4pt" />
+        <Button
+            android:id="@+id/link_step3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONTINUAR"
+            android:theme="@style/DarkButton"
+            android:textColor="@color/colorAccent"/>
 
     </LinearLayout>
 
-    </RelativeLayout>
-</ScrollView>
+</RelativeLayout>

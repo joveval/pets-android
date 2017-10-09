@@ -6,81 +6,88 @@
     android:layout_height="match_parent"
     tools:context="hound.com.houndapp.activity.LoginActivity"
     android:theme="@style/AppLightTheme">
+
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:background="@drawable/base_bg"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <RelativeLayout
-            android:elevation="6dp"
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
-            android:background="@drawable/base_floating_panel"
             android:layout_marginBottom="40dp"
-            android:layout_marginTop="40dp"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
-            >
+            android:layout_marginTop="40dp"
+            android:background="@drawable/base_floating_panel"
+            android:elevation="2dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
-                android:background="@color/colorAccent"
-                android:orientation="vertical"
-                android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:weightSum="1">
+                android:layout_alignParentTop="true"
+                android:background="@color/colorAccent"
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:elevation="4dp">
+
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Ingreso"
-                    android:layout_marginTop="30dp"
                     android:layout_marginBottom="10dp"
+                    android:layout_marginTop="30dp"
                     android:gravity="center"
-                    android:textSize="8pt"/>
+                    android:text="Ingreso"
+                    android:textSize="8pt" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
+
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/mail_08"/>
+                        android:src="@drawable/mail_08" />
 
                     <EditText
                         android:id="@+id/input_email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPersonName"
+                        android:layout_gravity="center_vertical"
                         android:hint="beingolea.a@gmail.com"
-                        android:textSize="4pt"
-                        android:layout_gravity="center_vertical"/>
+                        android:inputType="textPersonName"
+                        android:textSize="4pt" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
+
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/password_09"/>
+                        android:src="@drawable/password_09" />
 
 
                     <EditText
                         android:id="@+id/input_password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPassword"
+                        android:layout_gravity="center_vertical"
                         android:hint="password"
-                        android:textSize="4pt"
-                        android:layout_gravity="center_vertical"/>
+                        android:inputType="textPassword"
+                        android:textSize="4pt" />
 
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="40dp"></LinearLayout>
@@ -92,50 +99,53 @@
                     android:layout_height="40dp"
                     android:layout_marginBottom="2dp"
                     android:layout_marginTop="10dp"
+                    android:layout_weight="0.03"
                     android:text="Ingresar"
-                    android:theme="@style/DarkButton"
                     android:textColor="@color/colorAccent"
                     android:textSize="4pt"
-                    android:layout_weight="0.03" />
+                    android:theme="@style/DarkButton" />
 
                 <Button
                     android:id="@+id/btn_login_fb"
                     android:layout_width="fill_parent"
                     android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_marginLeft="0dp"
                     android:layout_marginRight="0dp"
                     android:layout_marginTop="2dp"
-                    android:layout_marginBottom="20dp"
-                    android:textColor="#E45157"
-                    android:theme="@style/LightButton"
                     android:text="Seguir con Facebook"
-                    android:textSize="4pt"/>
+                    android:textColor="#E45157"
+                    android:textSize="4pt"
+                    android:theme="@style/LightButton" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:paddingLeft="0dp"
                     android:paddingRight="0dp">
-                    <TextView android:id="@+id/link_forgot_pass"
+
+                    <TextView
+                        android:id="@+id/link_forgot_pass"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:text="@string/forgot_password"
-                        android:linksClickable="true"
                         android:layout_gravity="left|bottom"
-                        android:textSize="10dip"/>
+                        android:layout_marginBottom="10dp"
+                        android:linksClickable="true"
+                        android:text="@string/forgot_password"
+                        android:textSize="10dip" />
 
-                    <Button android:id="@+id/link_signup"
+                    <Button
+                        android:id="@+id/link_signup"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="1dp"
-                        android:theme="@style/LightButton"
-                        android:text="REGISTRO"
                         android:layout_gravity="center_vertical|right"
+                        android:layout_marginBottom="1dp"
+                        android:text="REGISTRO"
+                        android:textColor="@color/colorPrimary"
                         android:textSize="4pt"
-                        android:textColor="@color/colorPrimary"/>
+                        android:theme="@style/LightButton" />
                 </LinearLayout>
-
 
 
             </LinearLayout>

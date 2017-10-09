@@ -24,9 +24,11 @@
             android:layout_height="200dp"
             android:src="@drawable/mascota_birthday_05" />
         <Button
+            android:id="@+id/link_step6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="CONTINUAR"
+            android:textColor="@color/colorAccent"
             android:theme="@style/DarkButton"/>
 
     </LinearLayout>
@@ -36,11 +38,11 @@
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:theme="@style/AppTheme"
-        android:background="#000">
+        android:background="#fff">
 
 
-        <CalendarView
-            android:id="@+id/calendarView"
+        <DatePicker
+            android:id="@+id/datePicker"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1" />

@@ -24,8 +24,10 @@
             android:layout_height="200dp"
             android:src="@drawable/imagen_mascota_especia_04" />
         <Button
+            android:id="@+id/link_step5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
             android:text="CONTINUAR"
             android:theme="@style/DarkButton"/>
 
@@ -48,8 +50,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center_horizontal"
                 android:buttonTint="@color/colorPrimary"
                 android:text="Canino"
+                android:button="@android:color/transparent"
+                android:background="@drawable/rb_primary"
                 android:checked="true"
                 />
 
@@ -58,14 +63,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center_horizontal"
                 android:buttonTint="@color/colorPrimary"
+                android:button="@android:color/transparent"
+                android:background="@drawable/rb_primary"
                 android:text="Felino" />
             <RadioButton
                 android:id="@+id/input_especie_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center_horizontal"
                 android:buttonTint="@color/colorPrimary"
+                android:button="@android:color/transparent"
+                android:background="@drawable/rb_primary"
                 android:text="Ave" />
 
 

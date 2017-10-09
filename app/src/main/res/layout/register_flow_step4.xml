@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@drawable/base_bg">
-
-    <RelativeLayout
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="40dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginTop="40dp"
+    android:background="@drawable/base_floating_panel"
+    android:theme="@style/AppLightTheme">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="40dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/base_floating_panel"
-        android:theme="@style/AppLightTheme">
-
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
@@ -47,6 +46,7 @@
                 android:id="@+id/input_nombres"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
                 android:hint="Nombres"
                 android:inputType="textPersonName"
                 android:textSize="4pt" />
@@ -59,6 +59,7 @@
                 android:id="@+id/input_apellidos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
                 android:hint="Apellidos"
                 android:inputType="textPersonName"
                 android:textSize="4pt" />
@@ -71,6 +72,7 @@
                 android:id="@+id/input_distrito"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
                 android:hint="Distrito"
                 android:inputType="textAutoComplete"
                 android:textSize="4pt" />
@@ -79,8 +81,17 @@
 
 
         </LinearLayout>
+        <Button
+            android:id="@+id/link_step2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONTINUAR"
+            android:theme="@style/DarkButton"
+            android:textColor="@color/colorAccent"/>
+
+    </LinearLayout>
 
 
-    </RelativeLayout>
 
-</ScrollView>
+</RelativeLayout>
+
