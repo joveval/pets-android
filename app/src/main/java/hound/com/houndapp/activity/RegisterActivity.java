@@ -20,13 +20,10 @@ import hound.com.houndapp.fragment.RegisterStepperAdaper;
 public class RegisterActivity extends AppCompatActivity {
 
     private StepperLayout stepperLayout;
-    private FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        auth = FirebaseAuth.getInstance();
 
         setContentView(R.layout.register_flow_step2);
         ButterKnife.bind(this);

@@ -16,21 +16,37 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 
+import com.google.firebase.auth.FirebaseAuth;
+
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import hound.com.houndapp.R;
 
 public class RegisterFlowActivity extends AppCompatActivity {
 
+    @BindView(R.id.input_email)
+    TextView email;
+
+    @BindView(R.id.input_password)
+    TextView password;
+
+
     private int currentPos = 1;
 
     final private static int RESULT_TO_LOAD_IMG=1;
+    private FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        auth = FirebaseAuth.getInstance();
+
         setContentView(R.layout.activity_register_flow);
         ButterKnife.bind(this);
         getSupportActionBar().setTitle("Registro");
@@ -68,8 +84,10 @@ public class RegisterFlowActivity extends AppCompatActivity {
         oldView.setVisibility(View.GONE);
         newView.setVisibility(View.VISIBLE);
         if(currentPos==9){
+            auth.createUserWithEmailAndPassword(email.getText().toString(), password.getText().toString());
             View view = findViewById(R.id.prevActionBtn);
             view.setVisibility(View.GONE);
+            Toast.makeText(this, "Usuario registrado", Toast.LENGTH_SHORT).show();
         }
     }
     @OnClick(R.id.prevActionBtn)
