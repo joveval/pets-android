@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthException;
 import com.stepstone.stepper.StepperLayout;
 
 import butterknife.ButterKnife;
@@ -18,11 +20,14 @@ import hound.com.houndapp.fragment.RegisterStepperAdaper;
 public class RegisterActivity extends AppCompatActivity {
 
     private StepperLayout stepperLayout;
-
+    private FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        auth = FirebaseAuth.getInstance();
+
         setContentView(R.layout.register_flow_step2);
         ButterKnife.bind(this);
         //stepperLayout = (StepperLayout) findViewById(R.id.register_step_1);

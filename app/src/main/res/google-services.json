@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "216759101229",
+    "firebase_url": "https://hound-3de0c.firebaseio.com",
+    "project_id": "hound-3de0c",
+    "storage_bucket": "hound-3de0c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216759101229:android:871538af00280517",
+        "android_client_info": {
+          "package_name": "hound.com.houndapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216759101229-hsumdccp2f1teq26l72qi685s902etnr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCai9szOis6HMkM3CdvOw5He6641SWH474"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HoundApp.iml" filepath="$PROJECT_DIR$/HoundApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pets-android.iml" filepath="$PROJECT_DIR$/pets-android.iml" />
     </modules>
   </component>
 </project>

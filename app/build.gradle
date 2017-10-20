@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 25
@@ -24,11 +25,13 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+
+    compile "com.google.firebase:firebase-auth:9.0.0"
     compile 'com.android.support:appcompat-v7:25.4.0'
     compile 'com.android.support:design:25.4.0'
     compile 'com.jakewharton:butterknife:8.8.1'
-    compile 'com.google.android.gms:play-services-maps:10.0.0'
-    compile 'com.google.android.gms:play-services-location:10.0.0'
+    compile 'com.google.android.gms:play-services-maps:9.0.0'
+    compile 'com.google.android.gms:play-services-location:9.0.0'
     compile 'com.github.satyan:sugar:1.5'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.stepstone.stepper:material-stepper:4.3.0'
