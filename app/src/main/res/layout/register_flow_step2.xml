@@ -44,12 +44,12 @@
                     android:src="@drawable/mail_08" />
 
                 <EditText
-                    android:id="@+id/input_email"
+                    android:id="@+id/input_email_registro"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:hint="beingolea.a@gmail.com"
                     android:inputType="textEmailAddress"
-                    android:layout_gravity="center_vertical"
                     android:textSize="@dimen/min_size" />
 
 
@@ -68,14 +68,13 @@
                     android:src="@drawable/password_09" />
 
 
-
                 <EditText
-                    android:id="@+id/input_password"
+                    android:id="@+id/input_password_registro"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:hint="password"
                     android:inputType="textPassword"
-                    android:layout_gravity="center_vertical"
                     android:textSize="@dimen/min_size" />
 
 

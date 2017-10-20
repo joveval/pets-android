@@ -29,10 +29,10 @@ import hound.com.houndapp.R;
 
 public class RegisterFlowActivity extends AppCompatActivity {
 
-    @BindView(R.id.input_email)
+    @BindView(R.id.input_email_registro)
     TextView email;
 
-    @BindView(R.id.input_password)
+    @BindView(R.id.input_password_registro)
     TextView password;
 
 
