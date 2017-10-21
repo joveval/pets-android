@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/menu_home"
         android:title="@string/menu_home"
         android:icon="@drawable/icon_home_primary"
+        app:showAsAction="ifRoom"
         />
     <item
         android:id="@+id/menu_search"
         android:title="@string/menu_search"
         android:icon="@drawable/icon_search_primary"
+        app:showAsAction="ifRoom"
         />
 
     <item
-        android:id="@+id/menu_notifications"
+        android:id="@+id/menu_map"
         android:title="@string/menu_map"
-        android:icon="@drawable/icon_map_primary" />
+        android:icon="@drawable/icon_map_primary"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_vote"
+        android:title="@string/menu_vote"
+        android:icon="@drawable/icon_star_primary"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_me"
+        android:title="@string/menu_me"
+        android:icon="@drawable/icon_user_primary_lack"
+        app:showAsAction="ifRoom"/>
 </menu>
