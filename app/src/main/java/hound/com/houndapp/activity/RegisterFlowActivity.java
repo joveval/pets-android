@@ -29,23 +29,15 @@ import hound.com.houndapp.R;
 
 public class RegisterFlowActivity extends AppCompatActivity {
 
-    @BindView(R.id.input_email_registro)
-    TextView email;
-
-    @BindView(R.id.input_password_registro)
-    TextView password;
-
 
     private int currentPos = 1;
 
     final private static int RESULT_TO_LOAD_IMG=1;
-    private FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        auth = FirebaseAuth.getInstance();
 
         setContentView(R.layout.activity_register_flow);
         ButterKnife.bind(this);
@@ -84,7 +76,7 @@ public class RegisterFlowActivity extends AppCompatActivity {
         oldView.setVisibility(View.GONE);
         newView.setVisibility(View.VISIBLE);
         if(currentPos==9){
-            auth.createUserWithEmailAndPassword(email.getText().toString(), password.getText().toString());
+
             View view = findViewById(R.id.prevActionBtn);
             view.setVisibility(View.GONE);
             Toast.makeText(this, "Usuario registrado", Toast.LENGTH_SHORT).show();
