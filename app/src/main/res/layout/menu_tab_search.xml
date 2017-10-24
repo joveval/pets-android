@@ -2,9 +2,117 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/menu_search"
-        android:textAlignment="center"/>
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="50dp">
+        <LinearLayout android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Albergues"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:clickable="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buscador de colegiados"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:clickable="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hospedajes"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:clickable="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Negocios\nPet-Friendly"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:clickable="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Otros Servicios"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:clickable="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rediles/Caniles"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:clickable="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tienda de accesorios"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:clickable="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Veterinarias"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:clickable="true"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONSULTORIOS y CLÍNICAS"
+                android:textSize="4pt"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONSULTORIOS MUNICIPALES"
+                android:textSize="4pt"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POSTAS SOCIALES"
+                android:textSize="4pt"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VETERINARIO A DOMICILIO"
+                android:textSize="4pt"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
 </LinearLayout>
