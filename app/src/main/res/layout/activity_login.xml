@@ -60,7 +60,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:hint="beingolea.a@gmail.com"
-                        android:inputType="textPersonName"
+                        android:inputType="textEmailAddress"
                         android:textSize="@dimen/min_size" />
 
                 </LinearLayout>

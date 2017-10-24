@@ -91,6 +91,12 @@ public class RegisterFlowActivity extends AppCompatActivity {
 
     }
 
+    @OnClick(R.id.btn_register_init_hound)
+    public void goToMainMenu(){
+        Intent intent = new Intent(RegisterFlowActivity.this,MainActivity.class);
+        startActivity(intent);
+    }
+
     @OnClick(R.id.img_mascota)
     public void selectImage(){
         Intent i = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);

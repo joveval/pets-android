@@ -57,20 +57,36 @@ public class LoginActivity extends AppCompatActivity {
         String passwordValue = password.getText().toString();
 
         //TODO validations
+        //Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+        //startActivity(intent);
 
         auth.signInWithEmailAndPassword(emailValue, passwordValue)
                 .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
+
                         if (task.isSuccessful() == false) {
                             //TODO What is going on here
+                            Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+                            onSuccessMessage();
+                            startActivity(intent);
+
                         } else {
                             //TODO Continue to menu
+                            onErrorMessage();
                             finish();
                         }
                     }
                 });
 
+    }
+
+    public void onSuccessMessage(){
+        Toast.makeText(this, "Bienvenido", Toast.LENGTH_SHORT).show();
+    }
+
+    public void onErrorMessage(){
+        Toast.makeText(this, "El usuario o contraseña está mal escrito", Toast.LENGTH_SHORT).show();
     }
 
     @OnClick(R.id.link_signup)
